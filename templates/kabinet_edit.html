@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>account_edit</title>
+    <link rel="stylesheet" href="/static/kabinet_edit.css">
+    <link rel="website icon" href="/static/img/Instagram_icon.png">
+
+</head>
+<body>
+<nav class="help">
+    <div class="icon">
+        <div class="bosh7">
+            <h1 class="instagram"></h1>
+            <a href="{{ url_for("instagram",user_id=user.id) }}">
+                <div class="ic">
+                    <div class="ic2">
+                        <img width="25" height="35" src="/static/img/house-solid%20(1).svg" alt="">
+                        <h1 class="ic3">Главная</h1>
+                    </div>
+                </div>
+            </a>
+            <div class="ic">
+                <div class="ic2">
+                    <img width="25" height="35" src="/static/img/magnifying-glass-solid.svg" alt="">
+                    <h1 class="ic3">Поисковый запрос</h1>
+                </div>
+            </div>
+            <div class="ic">
+                <div class="ic2">
+                    <img width="25" height="35" src="/static/img/compass-regular.svg" alt="">
+                    <h1 class="ic3">Интересное</h1>
+                </div>
+            </div>
+            <div class="ic">
+                  <a href="{{ url_for("reels", user_id=user.id) }}">
+                    <div class="ic2">
+                        <img width="25" height="25" src="/static/img/icons8-instagram-reels-1600.png" alt="">
+                        <h1 class="ic3">Reels</h1>
+                    </div>
+                </a>
+            </div>
+
+            <div class="ic">
+                <div class="ic2">
+                    <img width="25" height="25" src="/static/img/facebook-messenger.svg" alt="">
+                    <h1 class="ic3">Сообщения</h1>
+                </div>
+            </div>
+            <div class="ic">
+                <div class="ic2">
+                    <img width="25" height="25" src="/static/img/heart-regular.svg" alt="">
+                    <h1 class="ic3">Уведомления</h1>
+                </div>
+            </div>
+            <div class="ic">
+                <a href="{{ url_for("add_photo", user_id=user.id) }}">
+                <div class="ic2">
+                    <img width="25" height="25" src="/static/img/icons8-plus-100.png" alt="">
+                    <h1 class="ic3">Создать</h1>
+                </div></a>
+            </div>
+            <div class="ic">
+                <a href="{{ url_for("kabinet",  user_id=user.id) }}">
+                    <div class="ic2">
+                        {% if user.img %}
+                            <img class="icon5" src="{{ user.img }}" alt="">
+                        {% else %}
+                            <img class="icon5" src="/static/img/icon%20lo.png" alt="">
+                        {% endif %}
+                        <h1 class="ic31">Профиль</h1>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="xg"></div>
+        <div class="cab">
+            <div class="x"></div>
+            <div class="ic"><a href="{{ url_for("hello_world") }}">
+                <div class="ic2">
+                    <div class="icon6"></div>
+                    <h1 class="ic3">Ещё</h1>
+                </div>
+            </a>
+            </div>
+        </div>
+    </div>
+</nav>
+<header class="vidio">
+    <form action="{{ url_for("account_edit", user_id=user.id) }}" method="post" enctype="multipart/form-data">
+        <div class="edit">
+            <div class="text"><h1 class="tx">Редактировать профиль</h1></div>
+            <div class="text1">
+                <div class="img77">
+                    {% if user.img %}
+                        <img class="img78" src="{{ user.img }}" alt="">
+                    {% else %}
+                        <img class="img78" src="/static/img/icon%20lo.png" alt="">
+                    {% endif %}
+                </div>
+                <div class="text2">
+                    <h1 class="tx1">{{ user.gmail }}</h1>
+                    <h1 class="tx2">{{ user.name }} {{ user.surname }}</h1>
+                </div>
+                <input class="text3" type="file" name="photo">
+            </div>
+            <div class="text4">
+                <h1 class="tx"> Имя пользователя</h1>
+                <input class="text5" type="text" name="gmail" placeholder="Имя пользователя" value="{{ user.gmail }}">
+                <h1 class="tx3">Если вы измените имя пользователя, адрес вашего аккаунта <br> Instagram также изменится.
+                </h1>
+            </div>
+            <div class="text8">
+                <h1 class="tx"> Имя</h1>
+                <input class="text5" type="text" name="surname" placeholder="Имя" value="{{ user.surname }}">
+                <input class="text5" type="text" name="name" placeholder="Имя" value="{{ user.name }} ">
+                <h1 class="tx3">Изменить имя можно не более двух раз в течение 14 дней.</h1>
+            </div>
+            <div class="text6">
+                <h1 class="tx">О себе</h1>
+                <textarea class="text7" name="commentary" placeholder="О себе">{{ user.commentary }}</textarea>
+            </div>
+            <button class="text9">Отправить</button>
+        </div>
+
+    </form>
+</header>
+</body>
+</html>

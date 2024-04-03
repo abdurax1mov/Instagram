@@ -1,0 +1,766 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    height: 100vh;
+    position: relative;
+}
+
+.bosh7 {
+    width: 290px;
+    height: 530px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.help {
+    width: 315px;
+    height: 100%;
+    border-right: 1px rgba(128, 128, 128, 0.43) solid;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.icon {
+    width: 290px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.instagram {
+    width: 102px;
+    height: 30px;
+    background-image: url("../static/img/8n91YnfPq0s.png");
+    background-size: cover;
+    margin-left: -180px;
+    margin-top: 12px;
+    margin-bottom: 30px;
+
+}
+
+.ic {
+    width: 300px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.ic:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.ic2 {
+    width: 300px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.ic1 {
+    font-family: Calibri;
+    color: white;
+    font-size: 20px;
+}
+
+.icon6 {
+    width: 20px;
+    height: 25px;
+    background-size: cover;
+    background-image: url("../static/img/bars-solid.svg");
+}
+
+.ic3 {
+    font-family: Calibri;
+    color: white;
+    font-size: 18px;
+    margin-left: 15px;
+    font-weight: 100;
+}
+
+.ic31 {
+    font-family: Calibri;
+    color: white;
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+.icon5 {
+    width: 26px;
+    height: 26px;
+    border-radius: 30px;
+    background-size: cover;
+    border: 2px white solid;
+}
+
+.xg {
+    width: 290px;
+    height: 200px;
+}
+
+.cab {
+    width: 300px;
+    height: 100px;
+}
+
+.x {
+    width: 300px;
+    height: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.vidio {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.yo {
+    width: 350px;
+    height: 900px;
+}
+
+.vidio1 {
+    width: 950px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.yo1 {
+    width: 950px;
+    height: 30px;
+}
+
+.img70 {
+    width: 300px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img77 {
+    width: 154px;
+    height: 154px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background-image: linear-gradient(to top, yellow, firebrick, deeppink, #8134AF 90%);
+}
+
+.img78 {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    border-radius: 100px;
+}
+
+.img71 {
+    width: 650px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
+}
+
+.img73 {
+    width: 650px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.username {
+    font-family: Calibri;
+    font-size: 26px;
+    color: white;
+    font-weight: 50;
+}
+
+.nas {
+    width: 300px;
+    height: 30px;
+    background-color: rgba(128, 128, 128, 0.49);
+    border-radius: 8px;
+    margin-left: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nas2 {
+    font-size: 20px;
+    font-family: Calibri;
+    color: white;
+    font-weight: 100;
+}
+
+.nas1 {
+    width: 35px;
+    height: 35px;
+    margin-left: 65px;
+    background-image: url("../static/img/gear-solid.svg");
+    background-size: cover;
+    border-radius: 50px;
+}
+
+.pod {
+    width: 650px;
+    height: 35px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.post {
+    width: 130px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.id {
+    font-family: Calibri;
+    font-size: 20px;
+    color: white;
+    margin-left: 7px;
+    font-weight: 100;
+}
+
+.id1 {
+    font-family: Calibri;
+    font-size: 20px;
+    color: white;
+    font-weight: 100;
+}
+
+.id2 {
+    color: rgb(67, 137, 241);
+    font-family: Calibri;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.post1 {
+    width: 180px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+}
+
+.name {
+    width: 650px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.co {
+    width: 650px;
+    height: 230px;
+}
+
+.co1 {
+    width: 100px;
+    height: 230px;
+    flex-wrap: wrap;
+}
+
+.co2 {
+    font-weight: 100;
+    font-size: 19px;
+    color: white;
+    font-family: Calibri;
+}
+
+
+.yoo {
+    width: 950px;
+    height: 50px;
+}
+
+.chi2 {
+    width: 917px;
+    height: 1px;
+    margin-left: 4px;
+    background-color: rgba(255, 255, 255, 0.53);
+}
+
+.bosh1 {
+    width: 917px;
+    height: 50px;
+    margin-left: 4px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+
+.sava {
+    width: 918px;
+    min-height: 100%;
+    flex-wrap: wrap;
+    display: none;
+    margin-top: -5px;
+    margin-left: -5px;
+}
+
+.img80 {
+    width: 909px;
+    min-height: 100%;
+    flex-wrap: wrap;
+}
+
+.display {
+    display: flex;
+}
+
+.none1 {
+    display: none;
+}
+
+.rasm {
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.rasm1 {
+    width: 300px;
+    height: 300px;
+    margin-top: 5px;
+    margin-left: 5px;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.fo {
+    width: 160px;
+    height: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.chi3 {
+    width: 160px;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    top: -1px;
+    left: 0;
+}
+
+.chi45 {
+    width: 160px;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    display: none;
+}
+
+.chiz46 {
+    display: flex;
+}
+
+.fo1 {
+    color: white;
+    font-family: Cambria;
+    font-size: 20px;
+}
+
+.sa1 {
+    color: white;
+    width: 160px;
+    height: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.select {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 133, 255, 0.18);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.select1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(76, 164, 255, 0.09);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.select3 {
+    display: flex;
+}
+
+.select2 {
+    display: flex;
+}
+
+
+.x1 {
+    width: 25px;
+    height: 27px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background-image: url("../static/img/xmark-solid.svg");
+    background-size: cover;
+}
+
+.x2 {
+    width: 25px;
+    height: 27px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background-image: url("../static/img/xmark-solid.svg");
+    background-size: cover;
+
+}
+
+.select1 {
+    position: fixed;
+}
+
+.select {
+    position: fixed;
+}
+
+.sel4 {
+    width: 500px;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sel1 {
+    width: 1400px;
+    height: 900px;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sel2 {
+    width: 900px;
+    height: 900px;
+    background-size: cover;
+}
+
+.sel22 {
+    width: 900px;
+    height: 900px;
+    background-size: cover;
+}
+
+.sel3 {
+    width: 500px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    border-bottom: 1px grey solid;
+    position: relative;
+}
+
+.sele1 {
+    width: 500px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    position: relative;
+}
+
+.co11 {
+    width: 500px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user {
+    font-size: 15px;
+    color: white;
+    font-family: Calibri;
+    margin-left: 10px;
+}
+
+.user3 {
+    font-size: 15px;
+    color: white;
+    font-family: Calibri;
+    margin-left: 10px;
+}
+
+.user1 {
+    font-size: 15px;
+    color: white;
+    font-family: Calibri;
+    margin-left: 10px;
+    font-weight: 100;
+}
+
+.user2 {
+    font-size: 15px;
+    color: white;
+    font-family: Calibri;
+    margin-left: 10px;
+    font-weight: 100;
+}
+
+.like1 {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.like2 {
+    width: 20px;
+    height: 20px;
+    background-image: url("../static/img/heart-regular.svg");
+    background-size: cover;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.like2_red {
+    width: 20px;
+    height: 20px;
+    background-image: url("../static/img/like_red.svg");
+    background-size: cover;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.like3 {
+    width: 25px;
+    height: 25px;
+    background-image: url("../static/img/like_red.svg");
+    background-size: cover;
+    border: none;
+    background-color: black;
+    z-index: 2;
+}
+.text77{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 13px;
+}
+
+
+.img {
+    width: 32px;
+    height: 32px;
+    background-image: url("../static/img/icon lo.png");
+    background-size: cover;
+    border-radius: 40px;
+    margin-left: 15px;
+}
+
+.de {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    right: 25px;
+    top: 9px;
+    position: absolute;
+}
+
+.coment {
+    width: 500px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+.co12 {
+    width: 400px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.yoz {
+    border-top: 1px grey solid;
+    width: 500px;
+    height: 145px;
+}
+
+.li {
+    width: 500px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.d1 {
+    width: 300px;
+    height: 10px;
+}
+
+.like {
+    width: 25px;
+    height: 25px;
+    background-image: url("../static/img/heart-regular.svg");
+    background-size: cover;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 2;
+}
+
+.like_red {
+    width: 25px;
+    height: 25px;
+    background-image: url("../static/img/like_red.svg");
+    background-size: cover;
+    border: none;
+    background-color: black;
+    z-index: 2;
+}
+
+.kom {
+    width: 25px;
+    height: 25px;
+    background-image: url("../static/img/comment-regular.svg");
+    background-size: cover;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.ot {
+    width: 25px;
+    height: 25px;
+    background-image: url("../static/img/paper-plane-regular.svg");
+    background-size: cover;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.sa {
+    width: 20px;
+    height: 27px;
+    background-image: url("../static/img/bookmark-regular.svg");
+    background-size: cover;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.rels6 {
+    font-size: 17px;
+    color: white;
+    font-family: Calibri;
+    margin-left: 10px;
+}
+
+.rels7 {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.59);
+    font-family: Calibri;
+    margin-left: 10px;
+    margin-top: 2px;
+}
+
+.input {
+    width: 300px;
+    height: 35px;
+    color: white;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    outline: none;
+    margin-left: 48px;
+    flex-wrap: wrap;
+}
+
+.in1 {
+    margin-top: 5px;
+    width: 500px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-top: 1px grey solid;
+
+}
+
+.input::placeholder {
+    font-family: Calibri;
+}
+
+.sm {
+    width: 25px;
+    height: 25px;
+    background-image: url("../static/img/face-smile-regular.svg");
+    background-size: cover;
+    margin-left: 10px;
+}
+
+.post2 {
+    width: 150px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: #0064e0;
+    font-family: Calibri;
+    font-size: 18px;
+    margin-left: 320px;
+}
+
+select

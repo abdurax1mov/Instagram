@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    height: 100vh;
+    position: relative;
+}
+
+.bosh7 {
+    width: 290px;
+    height: 530px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.help {
+    width: 315px;
+    height: 100%;
+    border-right: 1px rgba(128, 128, 128, 0.43) solid;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.icon {
+    width: 290px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.instagram {
+    width: 102px;
+    height: 30px;
+    background-image: url("../static/img/8n91YnfPq0s.png");
+    background-size: cover;
+    margin-left: -180px;
+    margin-top: 12px;
+    margin-bottom: 30px;
+
+}
+
+.ic {
+    width: 300px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.ic:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.ic2 {
+    width: 300px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+
+}
+
+.ic1 {
+    font-family: Calibri;
+    color: white;
+    font-size: 20px;
+}
+
+.ic3 {
+    font-family: Calibri;
+    color: white;
+    font-size: 18px;
+    margin-left: 15px;
+    font-weight: 100;
+}
+
+.ic31 {
+    font-family: Calibri;
+    color: white;
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+.icon5 {
+    width: 25px;
+    height: 25px;
+    border-radius: 30px;
+    background-size: cover;
+    border: 2px white solid;
+}
+
+.xg {
+    width: 290px;
+    height: 200px;
+}
+
+.cab {
+    width: 300px;
+    height: 100px;
+}
+
+.x {
+    width: 300px;
+    height: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.vidio {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit {
+    width: 700px;
+    height: 930px;
+
+}
+
+.text {
+    width: 700px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.tx {
+    font-size: 25px;
+    font-family: Calibri;
+    color: white;
+}
+
+.text1 {
+    width: 700px;
+    height: 110px;
+    background-color: #1c2b33;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.img77 {
+    width: 90px;
+    margin-left: 25px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background-image: linear-gradient(to top, yellow, firebrick, deeppink, #8134AF 90%);
+}
+
+.img78 {
+    width: 86px;
+    height: 86px;
+    background-size: cover;
+    border-radius: 100px;
+}
+
+.text2 {
+    width: 300px;
+    height: 100px;
+    margin-left: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tx1 {
+    font-family: Calibri;
+    font-size: 25px;
+    color: white;
+}
+
+.tx2 {
+    font-family: Calibri;
+    font-size: 25px;
+    color: white;
+    font-weight: 100;
+}
+
+.text3 {
+    width: 130px;
+    height: 23px;
+    background-color: red;
+    outline: none;
+    border-radius: 5px;
+    margin-left: 80px;
+    position: relative;
+}
+
+.text4 {
+    width: 700px;
+    height: 180px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.text5 {
+    width: 680px;
+    height: 25px;
+    background-color: #1c2b33;
+    outline: none;
+    border: 10px #1c2b33 solid;
+    border-radius: 7px;
+    position: relative;
+    color: white;
+    font-size: 21px;
+    font-family: Calibri;
+}
+
+.text5::placeholder {
+    font-family: Calibri;
+}
+
+.tx3 {
+    font-size: 18px;
+    font-family: Calibri;
+    color: grey;
+}
+
+.text6 {
+    width: 700px;
+    height: 175px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.text7 {
+    width: 680px;
+    height: 100px;
+    outline: none;
+    border: 10px black solid;
+    background-color: black;
+    color: white;
+    font-family: Calibri;
+    box-shadow: 0 0 0 1px grey;
+    font-size: 20px;
+    border-radius: 7px;
+
+}
+
+.text8 {
+    width: 700px;
+    height: 180px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.text9 {
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #0085ff;
+    border: none;
+    margin-top: 15px;
+    margin-left: 450px;
+    color: white;
+    font-size: 20px;
+    font-family: Calibri;
+}
+
+.text9:hover {
+    background-color: rgba(0, 133, 255, 0.7);
+}
+

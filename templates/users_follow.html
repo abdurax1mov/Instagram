@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ users_get.gmail }}</title>
+    <link rel="stylesheet" href="/static/users_follow.css">
+    <link rel="website icon" href="../static/img/Instagram_icon.png">
+</head>
+<body>
+<header class="help">
+    <div class="icon">
+        <div class="bosh7">
+            <h1 class="instagram"></h1>
+            <a href="{{ url_for("instagram",  user_id=user.id) }}">
+                <div class="ic">
+                    <div class="ic2">
+                        <img width="25" height="35" src="/static/img/house-solid%20(1).svg" alt="">
+                        <h1 class="ic3">Главная</h1>
+                    </div>
+                </div>
+            </a>
+            <div class="ic">
+                <div class="ic2">
+                    <img width="25" height="35" src="/static/img/magnifying-glass-solid.svg" alt="">
+                    <h1 class="ic3">Поисковый запрос</h1>
+                </div>
+            </div>
+            <div class="ic">
+                <div class="ic2">
+                    <img width="25" height="35" src="/static/img/compass-regular.svg" alt="">
+                    <h1 class="ic3">Интересное</h1>
+                </div>
+            </div>
+            <div class="ic">
+                 <a href="{{ url_for("reels", user_id=user.id) }}">
+                    <div class="ic2">
+                        <img width="25" height="25" src="../static/img/icons8-instagram-reels-1600.png" alt="">
+                        <h1 class="ic3">Reels</h1>
+                    </div>
+                </a>
+            </div>
+
+            <div class="ic">
+
+                <div class="ic2">
+                    <img width="25" height="25" src="/static/img/facebook-messenger.svg" alt="">
+                    <h1 class="ic3">Сообщения</h1>
+                </div>
+            </div>
+            <div class="ic">
+                <div class="ic2">
+                    <img width="25" height="25" src="/static/img/heart-regular.svg" alt="">
+                    <h1 class="ic3">Уведомления</h1>
+                </div>
+            </div>
+            <div class="ic"><a href="{{ url_for("add_photo", user_id=user.id) }}">
+                <div class="ic2">
+                    <img width="25" height="25" src="/static/img/icons8-plus-100.png" alt="">
+                    <h1 class="ic3">Создать</h1>
+                </div>
+            </a>
+            </div>
+            <div class="ic"><a href="{{ url_for("kabinet",  user_id=user.id) }}">
+                <div class="ic2">
+                    {% if user.img %}
+                        <img class="icon5" src="{{ user.img }}" alt="">
+                    {% else %}
+                        <img class="icon5" src="/static/img/icon%20lo.png" alt="">
+                    {% endif %}
+                    <h1 class="ic31">Профиль</h1>
+                </div>
+            </a>
+            </div>
+        </div>
+        <div class="xg"></div>
+        <div class="cab">
+            <div class="x"></div>
+            <div class="ic">
+                <a href="{{ url_for("hello_world") }}">
+                    <div class="ic2">
+                        <div class="icon6"></div>
+                        <h1 class="ic3">Ещё</h1>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="vidio">
+    <div class="yo"></div>
+    <div class="vidio1">
+        <div class="yo1"></div>
+        <div class="img70">
+            {% if users_get.img %}
+                <div class="img77">
+                    <img class="img78" src="{{ users_get.img }}" alt="">
+                </div>
+            {% else %}
+                <img class="img78" src="/static/img/icon%20lo.png" alt="">
+            {% endif %}
+
+        </div>
+        <div class="img71">
+            <div class="img73">
+                <h1 class="username">{{ users_get.gmail }}</h1>
+                <a href="{{ url_for("follows", username_id=users_get.id) }}">
+                    {% if user.id in follow_id %}
+                        <button class="nas11">Подписки</button>
+                    {% else %}
+                        <button class="nas">Подписаться</button>
+                    {% endif %}
+
+                </a>
+
+            </div>
+            <div class="pod">
+                <div class="post">
+                    <h1 class="id1">{{ post }}</h1>
+                    <h1 class="id">публикаций</h1>
+                </div>
+                <div class="post1">
+                    <h1 class="id1">{{ overall }}</h1>
+                    <h1 class="id">подписчиков</h1>
+                </div>
+                <div class="post1">
+                    <h1 class="id1">{{ follows }}</h1>
+                    <h1 class="id"> подписок</h1>
+                </div>
+            </div>
+
+            <div class="name">
+                <h1 class="id2">{{ users_get.name }} {{ users_get.surname }}</h1>
+            </div>
+
+            <div class="co">
+                {% if users_get.commentary %}
+                    <div class="co1">
+                        <h1 class="co2">{{ users_get.commentary }}</h1>
+                    </div>
+                {% else %}
+                    <div class="co1">
+                        <h1 class="co2"></h1>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+        <div class="chi2"></div>
+        <div class="img80">
+            {% for foo in reels_get %}
+                <img class="rasm" src="{{ foo.reel }}" alt="">
+            {% endfor %}
+        </div>
+        <div class="yoo"></div>
+    </div>
+
+    {% for foo in reels_get %}
+        <div class="select7">
+            <div class="x5"></div>
+            <div class="sel1">
+                <div class="sel2">
+                    <img class="sel22" src="{{ foo.reel }}" alt="">
+                </div>
+                <div class="sel4">
+                    <div class="sel3">
+                        {% if users_get.img %}
+                            <img class="img" src="{{ users_get.img }}" alt="">
+                        {% else %}
+                            <img class="img" src="/static/img/icon%20lo.png" alt="">
+                        {% endif %}
+                        <a href="{{ url_for("kabinet",user_id=user.id) }}"><h1 class="user">{{ users_get.gmail }}</h1>
+                        </a>
+                        <a class="de" href="">...</a></div>
+
+                    <div class="coment">
+                        {% for comment in foo.comment_reel %}
+                            <div class="sele1">
+                                {% if users_get.img %}
+                                    <img class="img" src="{{ comment.users.img }}" alt="">
+                                {% else %}
+                                    <img class="img" src="/static/img/icon%20lo.png" alt="">
+                                {% endif %}
+                                <div class="co11">
+                                    <h1 class="user">{{ comment.users.name }}</h1>
+                                    <h1 class="user1">{{ comment.text }}</h1>
+                                    <div class="like1">
+                                        <form action="{{ url_for("comment_like_users",comment_id=comment.id, users7_id=users7_id) }}"
+                                              method="post">
+                                            {% if comment.id in like_co_users %}
+                                                <button class="like2_red"></button>
+                                            {% else %}
+                                                <button class="like2"></button>
+                                            {% endif %}
+                                        {% if comment.comment_li %}
+                                        <h1 class="text77">{{ comment.comment_li }}</h1>
+                                        {% endif %}
+                                        </form>
+
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+
+                    <div class="yoz">
+                        <div class="li">
+                            <form action="{{ url_for("add_like", reel_id=foo.id, users7_id=users7_id ) }}"
+                                  method="post">
+                                {% if foo.id in like_id %}
+                                    <button class="like_red"></button>
+                                {% else %}
+                                    <button class="like"></button>
+                                {% endif %}
+                            </form>
+
+                            <button class="kom"></button>
+                            <button class="ot"></button>
+                            <div class="d1"></div>
+                            <form action="{{ url_for("save", save_id=user.id, save_reel_id=foo.id) }}">
+                                <button class="sa"></button>
+                            </form>
+                        </div>
+                        <h1 class="rels6">{{ foo.like_count }} отметок "Нравится"</h1>
+                        <h1 class="rels7">{{ foo.length_comment }} комментарий</h1>
+                        <form action="{{ url_for("add_comment", id_reels_comment=foo.id, users7_id=users7_id) }}"
+                              method="post">
+                            <div class="in1">
+                                <div class="sm"></div>
+                                <input class="input" type="text" name="comment" placeholder="Добавьте комментарий...">
+                                <button class="post2">Опубликовать</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+
+
+<script src="/static/users_img.js"></script>
+</body>
+</html>

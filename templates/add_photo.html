@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Создание</title>
+    <link rel="stylesheet" href="/static/add_photo.css">
+    <link rel="website icon" href="/static/img/Instagram_icon.png">
+</head>
+<body>
+<nav class="help">
+    <div class="icon">
+        <div class="bosh7">
+            <h1 class="instagram"></h1>
+            <a href="{{ url_for("instagram", user_id=user.id) }}">
+                <div class="ic">
+                    <div class="ic2">
+                        <img width="25" height="35" src="/static/img/house-solid%20(1).svg" alt="">
+                        <h1 class="ic3">Главная</h1>
+                    </div>
+                </div>
+            </a>
+            <div class="ic">
+                <div class="ic2">
+                    <img width="25" height="35" src="/static/img/magnifying-glass-solid.svg" alt="">
+                    <h1 class="ic3">Поисковый запрос</h1>
+                </div>
+            </div>
+            <div class="ic">
+                <div class="ic2">
+                    <img width="25" height="35" src="/static/img/compass-regular.svg" alt="">
+                    <h1 class="ic3">Интересное</h1>
+                </div>
+            </div>
+            <div class="ic">
+                <a href="{{ url_for("reels", user_id=user.id) }}">
+                    <div class="ic2">
+                        <img width="25" height="25" src="/static/img/icons8-instagram-reels-1600.png" alt="">
+                        <h1 class="ic3">Reels</h1>
+                    </div>
+                </a>
+            </div>
+
+            <div class="ic">
+                    <div class="ic2">
+                        <img width="25" height="25" src="/static/img/facebook-messenger.svg" alt="">
+                        <h1 class="ic3">Сообщения</h1>
+                    </div>
+            </div>
+            <div class="ic">
+                <div class="ic2">
+                    <img width="25" height="25" src="/static/img/heart-regular.svg" alt="">
+                    <h1 class="ic3">Уведомления</h1>
+                </div>
+            </div>
+            <div class="ic">
+                <a href="{{ url_for("add_photo", user_id=user.id) }}">
+                <div class="ic2">
+                    <img width="25" height="25" src="/static/img/icons8-plus-100.png" alt="">
+                    <h1 class="ic34">Создать</h1>
+                </div></a>
+            </div>
+            <div class="ic">
+                <a href="{{ url_for("kabinet", user_id=user.id) }}">
+                    <div class="ic2">
+                        {% if user.img %}
+                            <img class="icon5" src="{{ user.img }}" alt="">
+                        {% else %}
+                            <img class="icon5" src="/static/img/icon%20lo.png" alt="">
+                        {% endif %}
+                        <h1 class="ic31">Профиль</h1>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="xg"></div>
+        <div class="cab">
+            <div class="x"></div>
+            <div class="ic"><a href="{{ url_for("hello_world") }}">
+                <div class="ic2">
+                    <div class="icon6"></div>
+                    <h1 class="ic3">Ещё</h1>
+                </div>
+            </a>
+            </div>
+        </div>
+    </div>
+</nav>
+<header class="vidio">
+    <form action="{{ url_for("add_photo", user_id=user.id) }}" method="post" enctype="multipart/form-data">
+        <div class="add">
+            <div class="s"><h1 class="s1">Создание публикации</h1></div>
+            <div class="add1">
+                <div class="imh"></div>
+                <h1 class="s12">Перетащите сюда фото и видео</h1>
+                <input class="file" type="file" name="img">
+                <input class="text10" type="text" name="reel_name" placeholder="Добавьте комментарий...">
+                <a href="{{ url_for("kabinet",  user_id=user.id) }}">
+                    <button class="next">Next</button>
+                </a>
+            </div>
+        </div>
+    </form>
+
+
+</header>
+</body>
+</html>

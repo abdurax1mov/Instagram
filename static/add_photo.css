@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    height: 100vh;
+    position: relative;
+}
+
+.bosh7 {
+    width: 290px;
+    height: 530px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icon6 {
+    width: 20px;
+    height: 25px;
+    background-size: cover;
+    background-image: url("../static/img/bars-solid.svg");
+}
+
+.help {
+    width: 315px;
+    height: 100%;
+    border-right: 1px rgba(128, 128, 128, 0.43) solid;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.icon {
+    width: 290px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.instagram {
+    width: 102px;
+    height: 30px;
+    background-image: url("../static/img/8n91YnfPq0s.png");
+    background-size: cover;
+    margin-left: -180px;
+    margin-top: 12px;
+    margin-bottom: 30px;
+
+}
+
+.ic {
+    width: 300px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.ic:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.ic2 {
+    width: 300px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+
+}
+
+.ic1 {
+    font-family: Calibri;
+    color: white;
+    font-size: 20px;
+}
+
+.ic3 {
+    font-family: Calibri;
+    color: white;
+    font-size: 18px;
+    margin-left: 15px;
+    font-weight: 100;
+}
+
+.ic34 {
+    font-family: Calibri;
+    color: white;
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+.ic31 {
+    font-family: Calibri;
+    color: white;
+    font-size: 18px;
+    margin-left: 15px;
+    font-weight: 100;
+}
+
+.icon5 {
+    width: 25px;
+    height: 25px;
+    border-radius: 30px;
+    background-size: cover;
+}
+
+.xg {
+    width: 290px;
+    height: 200px;
+}
+
+.cab {
+    width: 300px;
+    height: 100px;
+}
+
+.x {
+    width: 300px;
+    height: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.vidio {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add {
+    width: 750px;
+    height: 750px;
+    background-color: #1c2b33;
+    border-radius: 15px;
+}
+
+.s {
+    width: 750px;
+    height: 50px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom: 2px grey solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s1 {
+    font-family: Calibri;
+    font-size: 22px;
+    color: white;
+}
+
+.add1 {
+    width: 750px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imh {
+    width: 300px;
+    height: 300px;
+    background-image: url("../static/img/7555555.png");
+    background-size: cover;
+}
+
+.s12 {
+    font-family: Calibri;
+    font-size: 22px;
+    color: white;
+    margin-top: -50px;
+}
+
+.file {
+    margin-top: 20px;
+    width: 300px;
+    height: 22px;
+    box-shadow: 0 0 10px 5px blue;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: 5px black solid;
+}
+
+.text10 {
+    width: 300px;
+    height: 22px;
+    box-shadow: 0 0 10px 5px blue;
+    margin-top: 20px;
+    border-radius: 5px;
+    outline: none;
+    background-color: black;
+    border: 5px black solid;
+    color: white;
+}
+
+.text10::placeholder {
+    color: grey;
+    font-size: 15px;
+    font-family: Calibri;
+}
+
+.next {
+    width: 310px;
+    height: 30px;
+    background-color: black;
+    margin-top: 20px;
+    border: 5px black solid;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 5px blue;
+}
+.next:hover{
+    background-color: #0085ff;
+    border: 5px #0085ff solid;
+    box-shadow: 0 0 10px 5px black;
+    color: black;
+}
